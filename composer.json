@@ -1,5 +1,5 @@
 {
-  "name": "davidrobert/restrictpage",
+  "name": "davidrobert/magento2-restrictpage",
   "description": "Restrict a specific page to logged customers",
   "type": "magento2-module",
   "version": "1.0.0",
