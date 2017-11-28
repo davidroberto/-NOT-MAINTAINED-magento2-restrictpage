@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="davidrobert" translate="label" sortOrder="10">
+            <label>Restrict Page</label>
+        </tab>
+        <section id="restrictpage" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Restrict Page</label>
+            <tab>davidrobert</tab>
+            <resource>DavidRobert_RestrictPage::config_restrictpage</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Restrict Page</label>
+                <field id="cms_page" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Select the cms page that will be restricted to the logged customers</label>
+                    <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
